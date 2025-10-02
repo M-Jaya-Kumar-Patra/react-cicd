@@ -4,8 +4,7 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - name: Get Code
+            - name: "Manual Clone"
               run: |
-                echo "cloning repo.."
-                echo "${{toJson(github)}}"
-                git clone https://github.com/${{github.repository}}.git
+                echo "Cloning repo..."
+                git clone https://github.com/${{ github.repository }}.git
