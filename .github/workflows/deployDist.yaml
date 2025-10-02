@@ -6,7 +6,7 @@ jobs:
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
-            - name: "Manual Clone"
+            - name: Manual Clone
               run: |
                 echo "Cloning repo..."
                 git clone https://github.com/${{ github.repository }}.git
