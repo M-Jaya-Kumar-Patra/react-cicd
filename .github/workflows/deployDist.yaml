@@ -1,10 +1,10 @@
 name: Deploy Dist
 on: [push, workflow_dispatch]
 jobs:
-    greet:
+    test:
         runs-on: ubuntu-latest
         steps:
-            - name: "Get_Code"
+            - name: "Get Code"
               run: |
                 echo "cloning repo.."
                 echo "${{toJson(github)}}"
